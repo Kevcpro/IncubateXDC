@@ -5,19 +5,13 @@
 <meta content="stuff, to, help, search, engines, not" name="keywords">
 <meta content="What this page is about." name="description">
 <meta content="Display Webcam Stream" name="title">
-<title>Display Webcam Stream</title>
+<title>Tim loves D.Va</title>
   
 <style>
-#container {
-    margin: 0px auto;
-    width: 500px;
-    height: 375px;
-    border: 10px #333 solid;
-}
 #videoElement {
-    width: 500px;
-    height: 375px;
-    background-color: #666;
+    width: 1250px;
+    height: 625px;
+    background-color: #333;
 }
 </style>
 </head>
@@ -35,7 +29,7 @@ navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia 
  
 if (navigator.getUserMedia)
 {       
-    navigator.getUserMedia({video: true}, handleVideo, videoError);
+    navigator.getUserMedia({video: true, audio: true}, handleVideo, videoError);
 }
  
 function handleVideo(stream)
@@ -45,6 +39,7 @@ function handleVideo(stream)
  
 function videoError(e)
 {
+self.refresh();
 }
 </script>
 </body>
