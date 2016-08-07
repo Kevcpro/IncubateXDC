@@ -19,11 +19,11 @@ a {
 #wrapper, #loginform {
     margin:0 auto;
     padding-bottom:25px;
-    position:absolute;
+    position:fixed;
     background:#EBF4FB;
-    width:430px;
+    width:410px;
     top: 0%;
-    left: 67.8%;
+    left: 70%;
     border:1px solid #ACD8F0; }
   
 #loginform { padding-top:18px; }
@@ -34,7 +34,7 @@ a {
     text-align:left;
     margin:0 auto;
     margin-bottom:25px;
-    padding:10px;
+    padding:5px;
     background:#fff;
     height:500px;
     width:356px;
